@@ -2,6 +2,44 @@
     box-sizing: border-box;
 }
 
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #22263a;
+  --border: #2e3248;
+  --accent: #6c63ff;
+  --accent2: #ff6584;
+  --accent3: #43e97b;
+  --text: #e8eaf6;
+  --muted: #8b92b8;
+  --font: "DM Sans", sans-serif;
+  --mono: "DM Mono", monospace;
+    --color-beige-50: #fdfdea;
+  --color-beige-100: #fcfcd3;
+  --color-beige-200: #fafabd;
+  --color-beige-300: #f4f4ba;
+  --color-beige-400: #f1f1bb;
+  --color-beige-500: #ebebb9;
+  --color-beige-600: #b9b98e;
+  --color-beige-700: #868664;
+  --color-beige-800: #585841;
+  --color-beige-900: #2d2d1f;
+  --color-beige-950: #1a1a10;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 32px;
+  --space-5: 64px;
+  --font-size-sm: 12px;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}
+
+
 /* composant : header
 
 Utilisation : 
@@ -155,51 +193,59 @@ font-weight: 400;
 line-height: 22px; /* 157.143% */
 }
 
-.button__heroknowmore {
-display: flex;
-width: 240px;
-padding: 12px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-border-radius: 8px;
-background: var(----color-secondary, #E9C46A);
-}
-
-.button__heroknowmoretext {
-color: var(----color-bg-dark, #264653);
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 150% */ 
-}
-
-.button__heroordernow {
-display: flex;
-width: 240px;
-padding: 12px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-border-radius: 8px;
-background: var(----color-primary, #2A9D8F);
-}
-
-.button__heroordernowtext {
-color: #FFF;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 150% */
-}
 
 
 
 
 
 
+
+
+/* composant : hero - bannière de présentation du site en dessous du header
+
+    <section class="hero">
+        <container class="hero__container">
+            <div class="hero__containertitle">Chez Thé Bulles</div>
+            <div class="hero__containerdescription">Découvrez notre sélection de thés maison exquis.</div>
+            <div class="hero__button">
+                <button class="button__heroknowmore">
+                    <a href="#" class="button__heroknowmoretext">En savoir plus</a>
+                </button>
+                <button class="button__heroordernow">
+                    <a href="#" class="button__heroordernowtext">Commander maintenant</a>
+                </button>
+            </div>   
+        </container>
+        <container class="hero_imagecontainer">
+            <img src="" alt="" class="hero__image">
+        </container>
+        <vecteur class="hero__vecteur">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1" viewBox="0 0 1440 1" fill="none">
+                <path d="M0 0.5H1440" stroke="black" stroke-opacity="0.1"/>
+            </svg>
+        </vecteur>
+    </section>
+
+elements:
+
+* section.hero : Englobe toute la partie hero du css.
+* hero__container : Englobe le hero__containertitle et le hero__containerdescription.
+* hero__containertitle : Nom de la compagnie sous format de titre dans le hero.
+* hero__containerdescription : Contient la phrase choc de la compagnie.
+* hero__button : Les deux boutons en dessous du hero__containerdescription qui sont nommés button__heroknowmore et button__heroorder.
+* hero_imagecontainer : Contient l'image par dessus le hero.
+* hero__image : S'occupe de la taille de l'image dans hero_imagecontainer.
+* hero__vecteur : S'occupe de dl'espacement entre toute les éléments dans hero.
+
+
+
+variantes :
+* button__heroknowmore : Bouton utilisé pour en savoir plus sur le produit.
+* button__heroorder : Bouton utilisé pour acheter le produit.
+* button__heroknowmoretext : Text dans le button__heroknowmore.
+* button__heroordertext : Texte dans le button__heroorder
+
+*/
 /* Hero banner*/
 section.hero {
 display: flex;
@@ -250,6 +296,46 @@ line-height: 24px; /* 126.316% */
 display: flex;
 align-items: flex-start;
 gap: 12px
+}
+
+.button__heroknowmore {
+display: flex;
+width: 240px;
+padding: 12px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+background: var(----color-secondary, #E9C46A);
+}
+
+.button__heroknowmoretext {
+color: var(----color-bg-dark, #264653);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */ 
+}
+
+.button__heroorder {
+display: flex;
+width: 240px;
+padding: 12px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+background: var(----color-primary, #2A9D8F);
+}
+
+.button__heroordertext {
+color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
 }
 
 .hero_imagecontainer {
