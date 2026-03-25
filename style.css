@@ -160,7 +160,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 22px; /* 137.5% */
+
 }
 
 
@@ -190,7 +190,7 @@ font-family: Poppins;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
-line-height: 22px; /* 157.143% */
+
 }
 
 
@@ -279,7 +279,7 @@ font-family: Ranchers;
 font-size: 72px;
 font-style: normal;
 font-weight: 400;
-line-height: 48px;  
+
 }
 
 .hero__containerdescription {
@@ -289,7 +289,7 @@ font-family: Poppins;
 font-size: 19px;
 font-style: normal;
 font-weight: 900;
-line-height: 24px; /* 126.316% */
+
 }
 
 .hero__button {
@@ -315,7 +315,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
-line-height: 24px; /* 150% */ 
+
 }
 
 .button__heroorder {
@@ -335,7 +335,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
-line-height: 24px; /* 150% */
+
 }
 
 .hero_imagecontainer {
@@ -369,7 +369,132 @@ stroke: rgba(0, 0, 0, 0.10);
 
 
 
+/* composant : contents - tout ce qui est à propos la compagnie
 
+<contents class="contents">
+        <container class="contents__container">
+            <p class="contents__containertitle">À propos</p>
+            <p class="contents__containerdescription">Nous sommes passionnés par le thé et souhaitons partager notre amour avec vous!</p>
+        </container>
+
+        <list class="contents__list">
+            <row01 class="contents__listrow">
+                <article01 class="contents__listrowarticle">
+                    <imgcontainer class="contents__listrowarticleimgcontainer">
+                        <image class="contents__listrowarticleimg">
+                            <logo class="contents__listrowarticleimglogo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81" fill="none">
+                                    <g clip-path="url(#clip0_12_71)">
+                                        <path d="M30.375 13.5V18.1575C27.5737 17.0438 24.57 16.47 21.5662 16.47C15.525 16.47 9.48374 18.765 4.85999 23.3887L16.0987 34.6275H19.845V38.3737C22.7475 41.2762 26.5275 42.795 30.3412 42.9637V50.625H20.25V60.75C20.25 64.4625 23.2875 67.5 27 67.5H60.75C66.3525 67.5 70.875 62.9775 70.875 57.375V13.5H30.375ZM26.6287 35.1337V27.8775H18.9337L15.4237 24.3675C17.3475 23.625 19.44 23.22 21.5662 23.22C26.0887 23.22 30.3075 24.975 33.5137 28.1475L38.2725 32.9062L37.5975 33.5812C35.8762 35.3025 33.5812 36.2812 31.1175 36.2812C29.5312 36.2812 27.9787 35.8762 26.6287 35.1337ZM64.125 57.375C64.125 59.2313 62.6062 60.75 60.75 60.75C58.8937 60.75 57.375 59.2313 57.375 57.375V50.625H37.125V41.8837C39.0487 41.1075 40.8375 39.96 42.39 38.4075L43.065 37.7325L52.6162 47.25H57.375V42.4913L37.125 22.3425V20.25H64.125V57.375Z" fill="#F4A261"/>
+                                    </g>
+                                <defs>
+                                    <clipPath id="clip0_12_71">
+                                    <rect width="81" height="81" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                                </svg>
+                            </logo>
+                        </image>
+                    </imgcontainer>
+
+                    <frame427 class="contents__listrowarticleframe">
+                        <title class="contents__listrowarticleframetitleframe">Notre histoire</title>
+                        <soustitre class="contents__listrowarticleframesubtitleframe">Chez Thé Bulle, chaque tasse de thé est préparée avec soin.</soustitre>
+
+                        <user class="contents__listrowarticleframeuser">
+                            <icon class="contents__listrowarticleframeusericon">
+                                <avatar class="contents__listrowarticleframeusericonavatar"></avatar>
+                                <userframe class="contents__listrowarticleframeusericonframe">
+                                    <title class="contents__listrowarticleframeusericonframetitle">L'équipe Thé Bulle</title>
+                                </userframe>
+                            </icon>
+                        </user>
+                    </frame427>
+
+                </article01>
+
+                <article02 class="contents__listrowarticle">
+                    <imgcontainer class="contents__listrowarticleimgcontainer">
+                        <image class="contents__listrowarticleimg--article02">
+                            <logo class="contents__listrowarticleimglogo--article02">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67" fill="none">
+                                    <g clip-path="url(#clip0_12_63)">
+                                        <path d="M55.6111 8.375H25.0555V15.0417L30.0833 19.0694C30.4166 19.3194 30.6111 19.7361 30.6111 20.1528V31.9861C30.6111 32.7639 30 33.375 29.2222 33.375H18.1111C17.3333 33.375 16.7222 32.7639 16.7222 31.9861V20.1528C16.7222 19.7361 16.9166 19.3194 17.25 19.0694L22.2777 15.0417V8.375H11.1666V36.1528C11.1666 42.2917 16.1388 47.2639 22.2777 47.2639H38.9444C45.0833 47.2639 50.0555 42.2917 50.0555 36.1528V27.8194H55.6111C58.6944 27.8194 61.1666 25.3194 61.1666 22.2639V13.9306C61.1666 10.8472 58.6944 8.375 55.6111 8.375ZM55.6111 22.2639H50.0555V13.9306H55.6111V22.2639Z" fill="#F4A261"/>
+                                        <path d="M55.6111 52.8195H11.1666V58.375H55.6111V52.8195Z" fill="#F4A261"/>
+                                    </g>
+                                <defs>
+                                    <clipPath id="clip0_12_63">
+                                    <rect width="67" height="67" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                                </svg>
+                            </logo>
+                        </image>
+                    </imgcontainer>
+
+                    <frame427 class="contents__listrowarticleframe">
+                        <title class="contents__listrowarticleframetitleframe">Nos thés tant appéciés</title>
+                        <soustitre class="contents__listrowarticleframesubtitleframe">Recettes est concoctées avec tout notre coeur.</soustitre>
+                        <userframe class="contents__listrowarticleframeusericonframe">
+                            <title class="contents__listrowarticleframeusericonframetitle">L'équipe Thé Bulle</title>
+                        </userframe>
+                    </frame427>
+                </article>
+            </row01>
+
+            <row02 class="contents__listrow">
+                <article03 class="contents__listrowarticle">
+                    <imgcontainer class="contents__listrowarticleimgcontainer">
+                        <image class="contents__listrowarticleimg--article03">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+                            <rect width="100" height="100" rx="6" fill="#2A9D8F"/>
+                            <path d="M49.875 32.5C54.1552 32.5 57.625 29.0302 57.625 24.75C57.625 20.4698 54.1552 17 49.875 17C45.5948 17 42.125 20.4698 42.125 24.75C42.125 29.0302 45.5948 32.5 49.875 32.5Z" fill="#F4A261"/>
+                            <path d="M84.75 63.5V55.75C76.07 55.75 68.63 52.03 63.05 45.365L57.8575 39.165C56.385 37.3825 54.215 36.375 51.9287 36.375H47.86C45.5737 36.375 43.4037 37.3825 41.9312 39.165L36.7387 45.365C31.12 52.03 23.68 55.75 15 55.75V63.5C25.7338 63.5 35.1112 58.9662 42.125 50.9062V59.625L27.09 65.6312C24.4937 66.6775 22.75 69.235 22.75 72.0637C22.75 75.9 25.85 79 29.6862 79H38.25V77.0625C38.25 71.715 42.59 67.375 47.9375 67.375H59.5625C60.6475 67.375 61.5 68.2275 61.5 69.3125C61.5 70.3975 60.6475 71.25 59.5625 71.25H47.9375C44.7213 71.25 42.125 73.8462 42.125 77.0625V79H70.0637C73.9 79 77 75.9 77 72.0637C77 69.235 75.2562 66.6775 72.66 65.6312L57.625 59.625V50.9062C64.6387 58.9662 74.0163 63.5 84.75 63.5Z" fill="#F4A261"/>
+                            </svg>
+                        </image>
+                    </imgcontainer>
+
+                    <frame427 class="contents__listrowarticleframe">
+                        <title class="contents__listrowarticleframetitleframe">Citation importante</title>
+                        <soustitre class="contents__listrowarticleframesubtitleframe">"Le thé a une magie qui unit l'esprit et le cœur."</soustitre>
+                    </frame427>
+                </article03>
+            </row02>
+        </list>
+    </contents>
+
+elements:
+
+*.contents : formate tout le les éléments dans contents
+* button__heroknowmore : Bouton utilisé pour en savoir plus sur le produit.
+*.contents__container : Contient le titre et la description du content.
+*.contents__containertitle : Est le titre du content.
+*.contents__containerdescription : Description en dessous du titre du content.
+*.contents__list : Contient les trois cartes qui ont les informations sur la compagnie.
+*.contents__listrow : Met en place les trois cartes qui sont dans l'espace de contents__list.
+*.contents__listrowarticle : Contient la premiere carte sur les information général de la compagnie
+*.contents__listrowarticleimgcontainer : container pour l'image dans le container.
+*.contents__listrowarticleimg : Contienr l'image du __listrowarticle
+*.contents__listrowarticleimglogo : 
+*.contents__listrowarticleframe : 
+*.contents__listrowarticleframetitleframe : 
+*.contents__listrowarticleframesubtitleframe : 
+*.contents__listrowarticleframeuser : 
+*.contents__listrowarticleframeusericon : 
+*.contents__listrowarticleframeusericonavatar : 
+*.contents__listrowarticleframeusericonframe : 
+.contents__listrowarticleframeusericonframetitle : 
+
+
+
+variantes :
+*.contents__listrowarticleimg--article02 : met en place la deuxième carte dans le contents__listrow
+*.contents__listrowarticleimg--article03 : met en place la troisième carte dans le contents__listrow
+*.contents__listrowarticleimglogo--article02 : 
+
+
+
+*/
 /* Début container */
 .contents {
 display: flex;
@@ -398,7 +523,7 @@ font-family: Ranchers;
 font-size: 40px;
 font-style: normal;
 font-weight: 400;
-line-height: 48px; /* 120% */
+
 }
 
 .contents__containerdescription {
@@ -409,7 +534,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 150% */
+
 }
 
 .contents__list {
@@ -506,7 +631,7 @@ font-family: Poppins;
 font-size: 20px;
 font-style: normal;
 font-weight: 700;
-line-height: 28px; /* 140% */
+
 }
 
 .contents__listrowarticleframesubtitleframe {
@@ -516,7 +641,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 150% */
+
 }
 
 .contents__listrowarticleframeuser {
@@ -560,7 +685,7 @@ font-family: Poppins;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
-line-height: 20px; /* 142.857% */
+
 }
 
 
@@ -595,7 +720,7 @@ font-family: Ranchers;
 font-size: 40px;
 font-style: normal;
 font-weight: 400;
-line-height: 48px; /* 120% */
+
 }
 
 .products__list {
@@ -667,7 +792,7 @@ font-family: Poppins;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
-line-height: 16px; /* 133.333% */
+
 }
 
 .products__listrowcardcontainerimagetitle--featured {
@@ -682,7 +807,7 @@ font-family: Poppins;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
-line-height: 16px; /* 133.333% */
+
 }
 
 .products__listrowcardcontainerimagetitle--02 {
@@ -697,7 +822,7 @@ font-family: Poppins;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
-line-height: 16px; /* 133.333% */
+
 }
 
 .products__listrowcardcontainerimagebadge {
@@ -726,7 +851,7 @@ font-family: Poppins;
 font-size: 12px;
 font-style: normal;
 font-weight: 500;
-line-height: 16px; /* 133.333% */
+
 }
 
 .products__listrowcardtextcontent {
@@ -755,7 +880,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 150% */
+
 }
 
 .products__listrowcardtextcontentsubtitle {
@@ -765,7 +890,7 @@ font-family: Poppins;
 font-size: 20px;
 font-style: normal;
 font-weight: 500;
-line-height: 28px; /* 140% */
+
 }
 
 .products__listrowcardtextcontentsubtitle--featured {
@@ -779,7 +904,7 @@ font-family: Poppins;
 font-size: 20px;
 font-style: normal;
 font-weight: 500;
-line-height: 28px; /* 140% */
+
 }
 
 .vector200 {
@@ -824,7 +949,7 @@ font-family: Ranchers;
 font-size: 40px;
 font-style: normal;
 font-weight: 400;
-line-height: 48px; /* 120% */
+
 }
 
 .listopentime__containersubtitle {
@@ -835,7 +960,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 150% */
+
 }
 
 .listopentime__list {
@@ -892,7 +1017,7 @@ font-family: Poppins;
 font-size: 32px;
 font-style: normal;
 font-weight: 400;
-line-height: 100px; /* 312.5% */
+
 }
 
 .listopentime__listrowitemframesub {
@@ -911,7 +1036,7 @@ font-family: Poppins;
 font-size: 24px;
 font-style: normal;
 font-weight: 700;
-line-height: 28px; /* 116.667% */
+
 }
 
 .listopentime__listrowitemsubtitle {
@@ -922,7 +1047,7 @@ font-family: Poppins;
 font-size: 20px;
 font-style: normal;
 font-weight: 500;
-line-height: 36px; /* 180% */
+
 }
 
 .listopentime__vector {
@@ -965,7 +1090,7 @@ font-family: Ranchers;
 font-size: 40px;
 font-style: normal;
 font-weight: 400;
-line-height: 48px; /* 120% */
+
 }
 
 .reviews__list {
@@ -1040,7 +1165,7 @@ font-family: Poppins;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
-line-height: 20px; /* 142.857% */
+
 }
 
 .reviews__listrowcardtitle {
@@ -1054,7 +1179,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 150% */
+
 }
 
 .reviews__vector {
@@ -1114,7 +1239,7 @@ font-family: Ranchers;
 font-size: 24px;
 font-style: normal;
 font-weight: 400;
-line-height: 32px; /* 133.333% */
+
 }
 
 .join__containerdescription {
@@ -1124,7 +1249,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 150% */
+
 }
 
 .join__containerbutton {
@@ -1150,7 +1275,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
-line-height: 24px; /* 150% */
+
 }
 
 .join__vector {
@@ -1242,7 +1367,7 @@ font-family: Poppins;
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
-line-height: 28px; /* 140% */
+
 
 }
 
@@ -1254,7 +1379,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 150% */
+
 }
 
 .workerlist__vector {
@@ -1307,7 +1432,7 @@ font-family: Ranchers;
 font-size: 40px;
 font-style: normal;
 font-weight: 400;
-line-height: 48px; /* 120% */
+
 }
 
 .data__containercontainerdescription {
@@ -1318,7 +1443,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 150% */
+
 }
 
 .data__list {
@@ -1360,7 +1485,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 150% */
+
 }
 
 .data__listrowmetricdata {
@@ -1374,7 +1499,7 @@ font-family: Poppins;
 font-size: 28px;
 font-style: normal;
 font-weight: 500;
-line-height: 36px; /* 128.571% */
+
 }
 
 .data__listrowmetricchange {
@@ -1388,7 +1513,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 150% */
+
 }
 
 .data_vector {
@@ -1437,7 +1562,7 @@ font-family: Ranchers;
 font-size: 40px;
 font-style: normal;
 font-weight: 400;
-line-height: 48px; /* 120% */
+
 }
 
 .contact_map {
@@ -1461,7 +1586,7 @@ font-family: Ranchers;
 font-size: 24px;
 font-style: normal;
 font-weight: 400;
-line-height: 48px; /* 200% */
+
 }
 
 .contact_mapaddressstreet {
@@ -1529,7 +1654,7 @@ font-family: Ranchers;
 font-size: 24px;
 font-style: normal;
 font-weight: 400;
-line-height: 48px; /* 200% */
+
 
 }
 
@@ -1556,7 +1681,7 @@ font-family: Poppins;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
-line-height: 20px; /* 142.857% */
+
 }
 
 .contact__listrowinputinput {
@@ -1581,7 +1706,7 @@ font-family: Poppins;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
-line-height: 20px; /* 142.857% */
+
 }
 
 .list__button {
@@ -1618,7 +1743,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
-line-height: 24px; /* 150% */
+
 }
 
 .footer {
@@ -1661,7 +1786,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
-line-height: 28px; /* 175% */
+
 }
 
 .footer__map {
@@ -1680,7 +1805,7 @@ font-family: Ranchers;
 font-size: 24px;
 font-style: normal;
 font-weight: 400;
-line-height: 28px; /* 116.667% */
+
 }
 
 .footer__mapcontainer {
